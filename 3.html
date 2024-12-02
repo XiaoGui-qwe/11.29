@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // const arr=["a",23,"b",45,32,NaN,-50,true,""," ",9];
+    // var sum=[];
+    // var count=0;
+    // for(var i=0;i<arr.length;i++){
+    //     if(typeof arr[i]=='number' && !isNaN(arr[i])){
+    //         sum.push(arr[i]);
+    //     }else{
+    //         continue;
+    //     }
+
+    // }
+    // for(var j=0;j<sum.length;j++){
+    //     count+=sum[j];
+    // }
+    // console.log("数组和为："+count);
+
+
+    function sum(arr){
+        var sum=0;
+        for(var i=0;i<arr.length;i++){
+            if(typeof arr[i]=='number' && !isNaN(arr[i])){
+                sum+=arr[i];
+            }
+        }
+        return sum;
+    }
+    var arr=["a",23,"b",45,32,NaN,-50,true,""," ",9];
+    console.log("数组和为："+sum(arr));
+</script>
+</html>

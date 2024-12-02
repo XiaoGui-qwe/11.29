@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function add(a) {
+        for(var i=0;i<a.length;i++){
+           if(a.every(num => num >0)){
+               console.log('数组中所有数字都大于0');
+           }else{
+               console.log('NO');
+           }
+        }
+        return a;
+    }
+    var arr = [1,2,-12,4,5,-10];
+    add(arr);
+</script>
+</html>

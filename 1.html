@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        求数组 [2,6,1,7,4] 里面所有元素的和以及平均值。
+    </p>
+</body>
+<script>
+    function add(a,b,c,d,e) {
+       const sum =a.reduce((acc, cur) => acc + cur, 0);
+       const avg =sum/a.length;
+       return [sum,avg];
+    } 
+    var a=[2,6,1,7,4];
+    const b =add(a);
+    console.log("和为:" + b[0] + " 平均值为:" + b[1]);
+</script>
+</html>
